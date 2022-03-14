@@ -1,0 +1,170 @@
+#side ul{margin:10px 0px 10px 0px;padding:0px 0px 0px 0px;list-style-type:none;font:11px tahoma;text-align:right;}
+#side li{margin:2px 10px 5px 10px;}
+#side a{display:block;height:15px;text-decoration:none;padding: 0px 0px 0px 0px;width:105px ;border-bottom-style: none;text-align:right;}
+#side a:link, #side a:active, #side a:visited{color:#31ac00;background:#9cff00;text-align:center;letter-spacing:4px;text-transform:lowercase; border:1px solid #73c300;text-align:right;}
+#side a:hover{color:#000000;background:#42ff00;border:1px solid #000000;text-align:right; background-image: url(navigation.jpg);}
+
+
+.title {
+	font-family: "tahoma";
+	font-size: 14px;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #1eb900;
+	border-bottom-color: #7de60c;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+
+}
+
+.title2 {
+	font-family: "tahoma";
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-decoration: underline;
+text-align:center;
+}
+
+a:link,a:visited,a:active {
+	font-family: "tahoma";
+	letter-spacing: 2px;
+	font-size: 11px;
+	font-weight: 140;
+	text-transform: lowercase;
+	border-bottom-style: solid;
+	text-decoration: none;
+	color: #00CC00;
+}
+
+a:hover {
+	font-family: "tahoma";
+	letter-spacing: 2px;
+	font-size: 11px;
+	font-weight: 140;
+	text-transform: lowercase;
+	border-bottom-style: solid;
+	text-decoration: none;
+	color: #00ff00;
+}
+
+ INPUT{
+background-image: url(./footer.jpg);
+  font-size:10pt;
+  font-weight:bold;
+  background-color:#a2ff00;
+  border-color: #649e00;
+  border-style: solid;
+  border-width: 2px;
+  color:#000000;
+}
+
+/*layout*/
+
+
+
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #006600;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: 2px none #CCCCCC;
+	background-color: #BBFB11;
+	background-image: url(bg.jpg);
+	background-repeat: repeat-x;
+}
+.thrColFixHdr #container {
+	width: 700px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding: 3px;
+	top: 100px;
+	border: 0px none #000000;
+	opacity: 0.90;
+} 
+.thrColFixHdr #header {
+	background: #DDDDDD;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+	width: 760px;
+} 
+.thrColFixHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColFixHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 120px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #ffffff; /* padding keeps the content of the div away from the edges */
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+height: 100%;
+}
+.thrColFixHdr #sidebar2 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 140px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #ffffff; /* padding keeps the content of the div away from the edges */
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+height: 100%;
+}
+.thrColFixHdr #mainContent {
+	width: 360px;
+	margin-top: 0;
+	margin-right: 200px;
+	margin-bottom: 0;
+	margin-left: 160px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+} 
+.thrColFixHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #DDDDDD;
+	background-image: url(footer.jpg);
+	background-repeat: no-repeat;
+} 
+.thrColFixHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+
+
+image01= new Image()
+image01.src="footer.jpg"
+image02= new Image()
+image02.src="test3.gif"
+
+function rollover(imagename, newsrc){
+document.images[imagename].src=newsrc.src
+}
